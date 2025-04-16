@@ -66,7 +66,6 @@ int main() {
     int opcao, linhasA, colunasA, linhasB, colunasB;
 
     do {
-        printf("\nMENU ANTI WOKE\n");
         printf("\nEscolha uma operacao:\n");
         printf("1. Soma\n2. Subtracao\n3. Transposta\n4. Identidade\n5. Multiplicacao\n6. Sair\n");
         scanf("%d", &opcao);
@@ -86,7 +85,6 @@ int main() {
             case 1:
             case 2:
                 if (linhasA != linhasB || colunasA != colunasB) {
-                    printf("\n * FAZ O L * \n");
                     printf("As matrizes devem ter as mesmas dimensoes para soma/subtracao.\n");
                     break;
                 }
@@ -119,7 +117,6 @@ int main() {
                 break;
             case 4:
                 if (linhasA != colunasA) {
-                    printf("\n * FAZ O L * \n");
                     printf("A matriz precisa ser quadrada para gerar uma identidade.\n");
                 } else {
                     A = (int *)malloc(linhasA * colunasA * sizeof(int));
@@ -131,7 +128,6 @@ int main() {
                 break;
             case 5:
                 if (colunasA != linhasB) {
-                    printf("\n * FAZ O L *\n");
                     printf("O numero de colunas da Matriz 1 deve ser igual ao numero de linhas da Matriz 2.\n");
                     break;
                 }
